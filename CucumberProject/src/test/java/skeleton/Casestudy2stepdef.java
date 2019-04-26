@@ -22,40 +22,40 @@ public class Casestudy2stepdef
 	public void before()
 	{
 
-		
-		driver=DriverUtility.getDriver("chrome");
-		 PageFactory.initElements(driver, CaseStudy2Page.class);
-		 driver.manage().window().maximize();
-		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-			driver.get("http://10.232.237.143:443/TestMeApp/login.htm");
-		 
+		driver=DriverUtility.getDriver("chrome");
+		PageFactory.initElements(driver, CaseStudy2Page.class);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+
+
 	}
 	@Given("login with valid credentials")
 	public void login_with_valid_credentials() {
-		
-		 CaseStudy2Page.usrname.sendKeys("Lalitha");
-		 CaseStudy2Page.pasword.sendKeys("Password123");
-		 CaseStudy2Page.login.click();
+		driver.get("http://10.232.237.143:443/TestMeApp/login.htm");
+		CaseStudy2Page.usrname.sendKeys("Lalitha");
+		CaseStudy2Page.pasword.sendKeys("Password123");
+		CaseStudy2Page.login.click();
 	}
 
 	@When("Larry added a headphone to the cart")
 	public void larry_added_a_headphone_to_the_cart() {
-		
+
 	}
 
 	@When("checkout for the payment")
 	public void checkout_for_the_payment() {
-	   
+
 	}
 
 	@When("fills transaction details")
 	public void fills_transaction_details() {
-	 
+
 	}
 
 	@Then("the product is successfully ordered")
 	public void the_product_is_successfully_ordered() {
-	 
+
 	}
 }

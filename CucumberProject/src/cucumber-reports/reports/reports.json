@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-04-26T10:01:56.595Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6865583800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Casestudy2stepdef.before()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "payment order",
+        "description": "",
+        "id": "casestudy2;payment-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1626198200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "login with valid credentials",
+            "match": {
+              "location": "Casestudy2stepdef.login_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Larry added a headphone to the cart",
+            "match": {
+              "location": "Casestudy2stepdef.larry_added_a_headphone_to_the_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "checkout for the payment",
+            "match": {
+              "location": "Casestudy2stepdef.checkout_for_the_payment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "fills transaction details",
+            "match": {
+              "location": "Casestudy2stepdef.fills_transaction_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the product is successfully ordered",
+            "match": {
+              "location": "Casestudy2stepdef.the_product_is_successfully_ordered()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "casestudy2",
+    "description": "",
+    "id": "casestudy2",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/skeleton/casestudy2.feature",
+    "tags": []
+  }
+]

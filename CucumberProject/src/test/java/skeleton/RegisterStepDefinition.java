@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import com.utility.DriverUtility;
 
 import cucumber.api.java.After;
-import cucumber.api.java.Before;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -28,7 +28,7 @@ public class RegisterStepDefinition
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-	@After
+	//@After
 	public void after()
 	{
 		driver.close();

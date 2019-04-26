@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/skeleton/casestudy1.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/skeleton/casestudy2.feature");
 formatter.feature({
-  "name": "CaseStudy Feature",
+  "name": "casestudy2",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Add product Scenario",
+  "name": "payment order",
   "description": "",
   "keyword": "Scenario"
 });
@@ -13,41 +13,51 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The Url of the TestMeApp",
+  "name": "login with valid credentials",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "CaseStudy1StepDefinition.the_Url_of_the_TestMeApp()"
+  "location": "Casestudy2stepdef.login_with_valid_credentials()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "login with a valid credentials",
+  "name": "Larry added a headphone to the cart",
   "keyword": "When "
 });
 formatter.match({
-  "location": "CaseStudy1StepDefinition.login_with_a_valid_credentials()"
+  "location": "Casestudy2stepdef.larry_added_a_headphone_to_the_cart()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "add a product",
+  "name": "checkout for the payment",
   "keyword": "And "
 });
 formatter.match({
-  "location": "CaseStudy1StepDefinition.add_a_product()"
+  "location": "Casestudy2stepdef.checkout_for_the_payment()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "product is added successfully",
+  "name": "fills transaction details",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Casestudy2stepdef.fills_transaction_details()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the product is successfully ordered",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CaseStudy1StepDefinition.product_is_added_successfully()"
+  "location": "Casestudy2stepdef.the_product_is_successfully_ordered()"
 });
 formatter.result({
   "status": "passed"
